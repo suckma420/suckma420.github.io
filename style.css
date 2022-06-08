@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Nunito&display=swap");
+
+body {
+    width: 480px;
+    max-width: 80%;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-size: larger;
+    background-color: #2e3440;
+    color: #d8dee9;
+    padding: 4%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    vertical-align: middle;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    text-align: center;
+    background-color: #4c566a;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-style: solid;
+    border-color: #2e3440;
+    vertical-align: middle;
+}
+
+img {
+    width: 480px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #2e3440;
+}
+
+.title {
+    text-align: center;
+    font-size: smaller;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #d8dee9;
+    text-align: center;
+    font-size: smaller;
+}
+
+html {
+    background-image: url("https://i.imgur.com/199x37I.png");
+    background-size: 100%;
+}
+
+header {
+    display: flex;
+    background-color: #5e81ac;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: larger;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #2e3440;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: smaller;
+}
+
+.song-title {
+    font-size: x-large;
+    text-align: center;        
+}
