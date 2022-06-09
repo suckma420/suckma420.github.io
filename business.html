@@ -8,32 +8,27 @@
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 margin: 0;
+                padding: 0;
                 background-size: cover;
             }
 
-            header {
-                background-color: darkBlue;
-                padding: 0;
-            }
-
             header img {
-                height: 70px;
                 margin-top: 20px;
             }
 
             header,
             footer {
-                text-align: center;
                 position: relative;
                 font: 14px 'Source Sans Pro', sans-serif;
             }
-            
 
             footer {
                 background-color: lightgray;
             }
 
             nav a {
+                vertical-align: middle !important;
+                text-align: center;
                 color: rgb(255, 255, 255);
                 display: inline-block;
                 font-size: 100%;
@@ -51,7 +46,9 @@
             }
 
             nav {
-                background-color: gray;
+                background-color: #253d98;
+                padding: 0px;
+                vertical-align: middle;
             }
 
             .background {
@@ -188,35 +185,64 @@
                 flex-wrap: wrap;
                 justify-content: space-evenly;
             }
+
+            #school-icon {
+                padding: 0;
+                margin: 0;
+                display: block;
+                height: 120px;
+                float: left;
+            }
+
+            #school-name {
+                margin: 0;
+                display: inline;
+                height: 60px;
+            }
+
+            #ns-brand {
+                background-color: white;
+                height: 60px;
+            }
+
+            #school-link {
+                height: 120px;
+                float: left;
+                padding: 0;
+                margin: 0;
+            }
+
+            #nav {
+                height: 50px;
+                vertical-align: middle;
+                margin: 10px auto;
+            }
+
+            footer {
+                text-align: center;
+            }
         </style>
     </head>
 
     <body>
         <header>
-            <a target="_blank" href="https://www.nguyensieu.edu.vn/"
-                ><img
-                    alt="nguyễn Siêu"
-                    src="https://www.nguyensieu.edu.vn/imgs/logo.jpg"
-            /></a>
-            <a target="_blank" href="../../index"
-                ><img
-                    alt="Code Avengers logo"
-                    src="https://learn.codeavengers.com/images/logo1.png"
-                    title="Go to Code Avengers home page"
-            /></a>
             <nav>
-                <a href="scary.html" title="This is already the home page don't click on this">Home</a>
-                <a href="#">Layout</a>
-                <a href="#">Colors</a>
-                <a href="#">Fonts</a>
+                <div id="ns-brand">
+                    <a id="school-link" target="_blank" href="https://www.nguyensieu.edu.vn/"
+                        ><img id="school-icon" alt="Nguyễn Siêu" src="https://www.nguyensieu.edu.vn/imgs/logo.jpg"
+                    /></a>
+                    <h1 id="school-name">Nguyen Sieu School</h1>
+                </div>
+
+                <div id="nav">
+                    <a href="scary.html" title="This is already the home page don't click on this">Home</a>
+                    <a href="#">Layout</a>
+                    <a href="#">Colors</a>
+                    <a href="#">Fonts</a>
+                    <a href="https://www.codeavengers.com/">Code Avengers</a>
+                </div>
             </nav>
-        </header>
         <section>
-            <img
-                data-data-src="https://i.pinimg.com/originals/5c/f6/1c/5cf61cea8668ecfae5fb3ffd1422ea6c.png"
-                src="https://i.pinimg.com/originals/5c/f6/1c/5cf61cea8668ecfae5fb3ffd1422ea6c.png"
-                class="background top0"
-            />
             <main class="top1">
                 <colum1>
                     <main_content>
