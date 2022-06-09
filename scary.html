@@ -17,17 +17,18 @@
         <video src="https://i.imgur.com/dfy90kH.mp4" autoplay></video>
 
         <script>
-            let element = document.getElementsByTagName('video');
+            var elem = document.documentElement;
 
-            if (element.requestFullscreen) {
-                element.requestFullscreen();
-            } else if (element.webkitRequestFullscreen) {
-                /* Safari */
-                element.webkitRequestFullscreen();
-            } else if (element.msRequestFullscreen) {
-                /* IE11 */
-                element.msRequestFullscreen();
-            }
+            /* View in fullscreen */
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    /* Safari */
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) {
+                    /* IE11 */
+                    elem.msRequestFullscreen();
+                }
         </script>
     </body>
 </html>
