@@ -1,0 +1,446 @@
+<!doctype html>
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inconsolata&family=Julius+Sans+One&family=Kdam+Thmor+Pro&family=Libre+Baskerville:ital@1&family=Pacifico&family=Source+Sans+Pro:wght@200;400&display=swap');
+
+    body {
+        background-image: url(/images/textures/white4.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        background-size: cover;
+    }
+
+    header {
+        background-color: darkBlue;
+        padding: 0;
+    }
+
+    header img {
+        height: 70px;
+        margin-top: 20px;
+    }
+
+    header,
+    footer {
+        text-align: center;
+        position: relative;
+    }
+
+    footer {
+        background-color: lightgray;
+    }
+
+    nav a,
+    div {
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        font: bold 100% 'Kdam Thmor Pro', sans-serif;
+        text-decoration: none;
+        padding: 12px 32px;
+    }
+
+    nav a:hover,
+    div:hover {
+        padding: 10px 30px;
+        border: 2px solid white;
+        border: 1px solid white;
+        margin: 1px 0;
+    }
+
+    nav {
+        background-color: gray;
+    }
+
+    .background {
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    section {
+        width: 100%;
+        padding: 0;
+        max-width: 1000px;
+        margin: auto;
+        position: relative;
+    }
+
+    main {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        display: inline-block;
+        margin: center;
+        padding: 0px;
+    }
+
+    colum1 {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 0 8% 8% 8%;
+        max-width: 1500px;
+    }
+
+    main_content {
+        width: 100%;
+        height: 100%;
+        display: block;
+        box-sizing: border-box;
+        text-align: left;
+        font: 30px 'Source Sans Pro', sans-serif;
+        text-align: justify;
+    }
+
+    .fix-bacground {
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-attachment: fixed;
+    }
+
+    .center-cropped {
+        width: 100px;
+        height: 100px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .top0 {
+        z-index: -1;
+        position: absolute;
+    }
+
+    .top1 {
+        z-index: 3;
+    }
+
+    h1 {
+        size: 100px;
+        box-sizing: border-box;
+        max-width: 100000px;
+        text-align: center;
+        font-size: 50px;
+        margin: 5px;
+    }
+
+    fullimg img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    photo a {
+        text-decoration: none;
+        color: #34495E;
+    }
+
+    photo {
+        width: 30%;
+        box-sizing: border-box;
+        display: inline-block;
+        margin: center;
+        text-align: center;
+        font-size: 20px;
+        padding: 2%;
+        min-width: 150px;
+        vertical-align: top;
+        text-decoration: none;
+    }
+
+    photo2 {
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 4px;
+        background-color: #DEB887;
+        width: 100%;
+        border: 9px outset #F5F5DC;
+    }
+
+    photo3 {
+        margin: 0;
+        padding-top: 150%;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    photo4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    photo4 img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    photo h2 {
+        margin: 0;
+    }
+
+    #scailframe {
+        padding-top: 80%;
+        display: block;
+        position: relative;
+    }
+
+    #scailframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #name {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media only screen and (max-width: 700px) {
+        #name {
+            display: block;
+        }
+    }
+
+    #gif_foreground {
+        position: abosulut;
+        z-index: 1;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        pointer-events: none;
+    }
+
+    #gif_foreground img {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        object-fit: contain;
+    }
+
+    #clcover {
+        object-fit: cover;
+    }
+
+    text_center {
+        text-align: center;
+        display: block;
+
+    }
+</style>
+
+
+
+<body>
+    <header>
+        <a target="_blank" href=https://www.nguyensieu.edu.vn /><img alt="nguyễn Siêu"
+            src="https://www.nguyensieu.edu.vn/imgs/logo.jpg"></a>
+        <a target="_blank" href="../../index"><img alt="Code Avengers logo" src="../../images/logo1.png"
+                title="Go to Code Avengers home page"></a>
+        <nav>
+            <a href="https://stock-images.0o.si/?p#/old-man-tries-to-climb-ladder-falls-down-and-eats-cookie-2298498123"
+                title="This is already the home page don't click on this">Home</a>
+            <a href="#">Layout</a>
+            <div onclick="f_gif_foreground()">Colors</div>
+            <div onclick="f_backgrond_color()">Fonts</div>
+        </nav>
+    </header>
+    <div id="gif_foreground"></div>
+    <section>
+        <img data-src="https://i.pinimg.com/originals/5c/f6/1c/5cf61cea8668ecfae5fb3ffd1422ea6c.png"
+            class="background top0">
+        <main class="top1">
+            <colum1 id="background_color">
+                <main_content>
+                    <h1 id="name">Nguyễn Siêu Coders</h1>
+                    <fullimg><img src="https://i.ibb.co/jRYBSv1/Microsoft-Teams-image-1.jpg"></fullimg>
+
+
+                    <p>Xin chào các bạn!
+                        Chúng mình là đội Nguyen Sieu Coders, gồm 5 bạn học sinh đến từ các lớp 6, 9, 10 trường THCS và
+                        THPT Nguyễn Siêu, thành phố Hà Nội. Với niềm đam mê với các thiết bị điện tử, chúng mình đã dành
+                        hết thời gian cho Khoa học Máy tính, ICT và Lập trình Scratch. Qua cuộc thi này, chúng mình muốn
+                        nâng cao kỹ năng lập trình, tìm hiểu sâu hơn về máy tính và khám phá các kiến thức mới. Chúng
+                        mình sẽ nỗ lực hết sức trong các hoạt động và hi vọng rằng sẽ đạt được giải cao nhất có thể.</p>
+                    <div id="scailframe" style="padding-top:48%">
+                        <iframe src="https://www.youtube.com/embed/kmZLX2T3ibc" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe><br>
+                    </div>
+                    <text_center id="img-container">
+                        <photo>
+                            <a href="https://learn.codeavengers.com/c/sonhoang/page1.html">
+                                <photo2>
+                                    <photo3>
+                                        <photo4>
+                                            <img src="https://i.ibb.co/k1X6g0Z/Face-App-1654613348864.jpg">
+                                        </photo4>
+                                    </photo3>
+                                </photo2><br>
+                                <h2>Hoàng Thanh Sơn</h2>
+                            </a>
+                        </photo>
+                        <photo>
+                            <a href="https://suckma420.github.io/">
+                                <photo2>
+                                    <photo3>
+                                        <photo4>
+                                            <img src="https://i.imgur.com/199BXNu.jpg">
+                                        </photo4>
+                                    </photo3>
+                                </photo2><br>
+                                <h2>Nguyễn Hoàng Minh</h2>
+                            </a>
+                        </photo>
+                        <photo>
+                            <a href="https://learn.codeavengers.com/c/kietngo/profile.html">
+                                <photo2>
+                                    <photo3>
+                                        <photo4>
+                                            <img src="https://i.ibb.co/596Mk8p/Microsoft-Teams-image.jpg">
+                                        </photo4>
+                                    </photo3>
+                                </photo2><br>
+                                <h2>Ngô Tuấn Kiệt</h2>
+                            </a>
+                        </photo>
+                        <photo>
+                            <a href="https://learn.codeavengers.com/c/minhnguyen31/profile.html">
+                                <photo2>
+                                    <photo3>
+                                        <photo4>
+                                            <img src="https://i.ibb.co/dkjBvRq/Nguy-n-Quang-Minh-5-1.jpg">
+                                        </photo4>
+                                    </photo3>
+                                </photo2><br>
+                                <h2>Nguyễn Quang Minh</h2>
+                            </a>
+                        </photo>
+                        <photo>
+                            <a href="https://learn.codeavengers.com/c/quangnguyen1/profile.html">
+                                <photo2>
+                                    <photo3>
+                                        <photo4>
+                                            <img src="https://i.ibb.co/BPGr4Qz/Nguy-n-Minh-Quang.jpg">
+                                        </photo4>
+                                    </photo3>
+                                </photo2><br>
+                                <h2>Nguyễn Minh Quang</h2>
+                            </a>
+                        </photo>
+                    </text_center>
+                </main_content>
+            </colum1>
+        </main>
+    </section>
+    <footer>
+        by: Nguyễn Siêu Coders
+        <br>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="CodeAvengers"
+            data-url="https://codeavengers.com/c/codename/business.html">Tweet</a>
+        <script src="/js/twitter.js"></script>
+        <p id="views"></p>
+    </footer>
+
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js';
+        import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js';
+        import { getDatabase, ref, set, onValue } from 'https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js';
+
+        const firebaseConfig = {
+            apiKey: 'AIzaSyCmt_AJF0giMfsQaRCY9edbb5gh6f4TZR4',
+            authDomain: 'nscoders-56641.firebaseapp.com',
+            projectId: 'nscoders-56641',
+            storageBucket: 'nscoders-56641.appspot.com',
+            messagingSenderId: '541342316417',
+            appId: '1:541342316417:web:1a82a1b846db1b88a65a80',
+            measurementId: 'G-DGHJZL3PKX',
+            databaseURL: 'https://nscoders-56641-default-rtdb.asia-southeast1.firebasedatabase.app/'
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const database = getDatabase(app);
+
+        var x_f_backgrond_color = 0;
+        function f_backgrond_color() {
+            const color = ['#FFFFFF', '#9CFCA3', '#A09BDA', '#F755FF', '#0090CB', '#1EC9DA', '#D3D633'];
+            h = color.length + 1;
+            g = document.getElementById('background_color');
+            g.style.backgroundColor = color[x_f_backgrond_color];
+            x_f_backgrond_color = (x_f_backgrond_color + 1) % h;
+        }
+        var x_f_gif_foreground = 0;
+        function f_gif_foreground() {
+            g = document.getElementById('gif_foreground');
+            const gif = [
+                'https://i.pinimg.com/originals/3b/ed/0e/3bed0ef802b3be6212e0d075297c0cd1.gif',
+                'https://i.pinimg.com/originals/fe/61/dc/fe61dc2b7ef08a538b906eced7fa5cb5.gif',
+                'https://img1.picmix.com/output/stamp/normal/8/7/3/1/1481378_d0f9b.gif'
+            ];
+            h = gif.length + 1;
+            if (x_f_gif_foreground == h) {
+                g.innerHTML = '';
+            } else {
+                g.innerHTML = '<img id="clcover" src="' + gif[x_f_gif_foreground] + '">';
+            }
+            x_f_gif_foreground = (x_f_gif_foreground + 1) % h;
+        }
+
+        var view;
+
+        function writeDOM(id, value) {
+            let element = document.getElementById(id);
+            element.innerHTML = value;
+        }
+
+        function readData() {
+            const viewsRef = ref(database, '/views/views');
+            onValue(viewsRef, (snapshot) => {
+                const data = snapshot.val();
+                view = data;
+                writeDOM('views', 'Page views:' + (data + 1).toString());
+            });
+        }
+
+        function writeData() {
+            if (typeof view !== 'undefined') {
+                set(ref(database, '/views/'), {
+                    views: view + 1
+                });
+            } else {
+                setTimeout(writeData, 250);
+            }
+        }
+
+        readData();
+        writeData();
+
+    </script>
+</body>
